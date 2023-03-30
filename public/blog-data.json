@@ -5,7 +5,7 @@
     "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaCUyMGJsb2d8ZW58MHx8MHx8&w=1000&q=80",
     "image": "",
     "authorImage": "./client-4.png",
-    "read-time": "2:21 ",
+    "readTime": "2:21 ",
     "publishDate": "Sep 7, 2023"
   },
   {
@@ -14,7 +14,7 @@
     "thumbnail": "https://c1.wallpaperflare.com/preview/767/454/329/backlit-blogging-business-coding.jpg",
     "image": "",
     "authorImage": "./client-3.png",
-    "read-time": "5:50 ",
+    "readTime": "5:50 ",
     "publishDate": "May 12, 2023"
   },
   {
@@ -23,7 +23,7 @@
     "thumbnail": "https://www.kimp.io/wp-content/uploads/2022/08/pexels-cottonbro-3584994.jpg",
     "image": "https://facebook.com",
     "authorImage": "./client-2.png",
-    "read-time": "12:12 ",
+    "readTime": "12:12 ",
     "publishDate": "Sep 18, 2022"
   },
   {
@@ -32,7 +32,7 @@
     "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmclMjBjb2RlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
     "image": "http://cnn.com",
     "authorImage": "./client.png",
-    "read-time": "12:11 ",
+    "readTime": "12:11 ",
     "publishDate": "Jun 2, 2022"
   }
 ]

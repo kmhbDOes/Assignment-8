@@ -1,14 +1,17 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark, faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Blog = (props) => {
-  const { thumbnail, authorName, authorImage, publishDate } = props.blog;
+  const { thumbnail, authorName, authorImage, publishDate, readTime } =
+    props.blog;
   return (
     <div>
       <p className="my-4">
         <img src={thumbnail} alt="" />
-        <div>
+        <div className="details-section">
           <div>
-            <div className="flex ">
+            <div className="flex">
               <img src={authorImage} alt="" />
             </div>
             <div>
@@ -16,7 +19,12 @@ const Blog = (props) => {
               <h2>{publishDate}</h2>
             </div>
           </div>
-          <div></div>
+          <div>
+            <h4>{readTime}</h4>
+            <button>
+              <FontAwesomeIcon icon={faBookmark} />
+            </button>
+          </div>
         </div>
       </p>
     </div>
