@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark, faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Blog = (props) => {
-  const { thumbnail, authorName, authorImage, publishDate, readTime } =
+  const { thumbnail, authorName, authorImage, publishDate, readTime, title } =
     props.blog;
   return (
     <div>
-      <p className="my-4">
+      <p className="my-10">
         <img src={thumbnail} alt="" />
-        <div className="details-section">
-          <div>
-            <div className="flex">
+        <div className="details-section flex justify-between items-center">
+          <div className="info-container flex justify-between gap-x-4 items-center">
+            <div className="my-4">
               <img src={authorImage} alt="" />
             </div>
             <div>
@@ -19,12 +19,16 @@ const Blog = (props) => {
               <h2>{publishDate}</h2>
             </div>
           </div>
-          <div>
+          <div className="button-time-container">
             <h4>{readTime}</h4>
             <button>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>
+        </div>
+        <div className="">
+          <h2 className="text-left font-bold">{title}</h2>
+          <button className="underline ">Mark as read</button>
         </div>
       </p>
     </div>
