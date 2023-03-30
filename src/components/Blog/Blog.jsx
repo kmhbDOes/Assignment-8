@@ -1,12 +1,14 @@
 import React from "react";
 
 const Blog = (props) => {
-    const {blog-cover-Image,} = props.blog
-    return <div>
-        <p>
-            <img src={} alt="" />
+  const { thumbnail, authorName } = props.blog;
+  return (
+    <div>
+      <p className="my-4">
+        <img src={thumbnail} alt="" />
       </p>
-  </div>;
+    </div>
+  );
 };
 
 export default Blog;
