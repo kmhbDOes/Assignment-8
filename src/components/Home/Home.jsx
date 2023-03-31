@@ -12,7 +12,7 @@ const Home = ({ handleReadTime, handleTitle }) => {
   }, []);
   return (
     <>
-      <div className="grid grid-cols-1 my-2">
+      <div className="my-2">
         <div className="w-full">
           {blogs.map((blog) => (
             <Blog

@@ -8,18 +8,18 @@ const Blog = ({ blog, handleReadTime, handleTitle }) => {
   return (
     <div>
       <p className="mb-10">
-        <img src={thumbnail} alt="" />
-        <div className="details-section flex justify-between items-center">
+        <img className=" rounded-md" src={thumbnail} alt="" />
+        <div className="details-section flex justify-between items-center mx-4">
           <div className="info-container flex justify-between gap-x-4 items-center">
             <div className="my-4">
               <img src={authorImage} alt="" />
             </div>
             <div>
-              <h2>{authorName}</h2>
+              <h2 className="font-bold">{authorName}</h2>
               <h2>{publishDate}</h2>
             </div>
           </div>
-          <div className="button-time-container flex gap-x-1 md:gap-x-3">
+          <div className="button-time-container flex-none md:flex gap-x-1 md:gap-x-3">
             <h4>{readTime} min read</h4>
             <button onClick={() => handleTitle(title)}>
               <FontAwesomeIcon icon={faBookmark} />
@@ -27,14 +27,17 @@ const Blog = ({ blog, handleReadTime, handleTitle }) => {
           </div>
         </div>
         <div className="">
-          <h2 className="text-left font-bold text-3xl">{title}</h2>
+          <h2 className="text-center md:text-left font-bold text-3xl">
+            {title}
+          </h2>
           <button
             onClick={() => handleReadTime(readTime)}
-            className="underline "
+            className="underline text-purple-500"
           >
             Mark as read
           </button>
         </div>
+        <hr className="h-4 my-3" />
       </p>
     </div>
   );
