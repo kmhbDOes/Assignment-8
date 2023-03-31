@@ -8,7 +8,7 @@ const SideCart = ({ displayTime, bookmarkedBlogs }) => {
       </div>
       <div className=" mx-auto border-4 rounded-xl shadow-lg bg-slate-200 font-bold  mt-3">
         <div>
-          <h1>Bookmarked Blogs: {}</h1>
+          <h1>Bookmarked Blogs: {bookmarkedBlogs.length}</h1>
           <ul>
             {bookmarkedBlogs &&
               bookmarkedBlogs.map((title) => <li key={title}>{title}</li>)}
