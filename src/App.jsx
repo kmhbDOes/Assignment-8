@@ -7,12 +7,14 @@ import Home from "./components/Home/Home";
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const handleReadTime = (time) => {
+    console.log(time);
+  };
   return (
     <div className="App">
       <Header></Header>
       <hr className="w-full mt-6 h-6" />
-      <Home></Home>
+      <Home handleReadTime={handleReadTime}></Home>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const Blog = (props) => {
+const Blog = ({ blog, handleReadTime }) => {
   const { thumbnail, authorName, authorImage, publishDate, readTime, title } =
-    props.blog;
+    blog;
   return (
     <div>
-      <p className="my-10">
+      <p className="mb-10">
         <img src={thumbnail} alt="" />
         <div className="details-section flex justify-between items-center">
           <div className="info-container flex justify-between gap-x-4 items-center">
@@ -19,9 +19,9 @@ const Blog = (props) => {
               <h2>{publishDate}</h2>
             </div>
           </div>
-          <div className="button-time-container">
-            <h4>{readTime}</h4>
-            <button>
+          <div className="button-time-container flex gap-x-1 md:gap-x-3">
+            <h4>{readTime} min read</h4>
+            <button onClick={() => handleReadTime(readTime)}>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>
