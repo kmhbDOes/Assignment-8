@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const Blog = ({ blog, handleReadTime }) => {
+const Blog = ({ blog, handleReadTime, handleTitle }) => {
   const { thumbnail, authorName, authorImage, publishDate, readTime, title } =
     blog;
   return (
@@ -21,7 +21,7 @@ const Blog = ({ blog, handleReadTime }) => {
           </div>
           <div className="button-time-container flex gap-x-1 md:gap-x-3">
             <h4>{readTime} min read</h4>
-            <button>
+            <button onClick={() => handleTitle(title)}>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>

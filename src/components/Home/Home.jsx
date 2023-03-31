@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
 import SideCart from "../SideCart/SideCart";
 
-const Home = ({ handleReadTime }) => {
+const Home = ({ handleReadTime, handleTitle }) => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -18,15 +18,11 @@ const Home = ({ handleReadTime }) => {
             <Blog
               key={blog.id}
               handleReadTime={handleReadTime}
+              handleTitle={handleTitle}
               blog={blog}
             ></Blog>
           ))}
         </div>
-        {/* <div ">
-          <SideCart></SideCart>
-          <h2 className="mt-3"></h2>
-          <h2 className="mt-3">Bookmarked Blogs: {blogs.length}</h2>
-        </div> */}
       </div>
     </>
   );
