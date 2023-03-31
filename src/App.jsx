@@ -8,7 +8,14 @@ import Home from "./components/Home/Home";
 function App() {
   const [count, setCount] = useState(0);
   const handleReadTime = (time) => {
-    console.log(time);
+    const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
+    if (previousReadTime) {
+      const totalReadTime = parseInt(previousReadTime) + parseInt(time);
+      localStorage.setItem("readTime", totalReadTime);
+    } else {
+      localStorage.setItem("readTime", time);
+    }
+    console.log(previousReadTime);
   };
   return (
     <div className="App">
