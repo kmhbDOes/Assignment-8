@@ -22,7 +22,7 @@ const Home = ({ handleReadTime }) => {
             ></Blog>
           ))}
         </div>
-        {/* <div className="w-72 mx-auto border-4 rounded-xl shadow-lg">
+        {/* <div ">
           <SideCart></SideCart>
           <h2 className="mt-3"></h2>
           <h2 className="mt-3">Bookmarked Blogs: {blogs.length}</h2>

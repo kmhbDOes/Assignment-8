@@ -21,14 +21,19 @@ const Blog = ({ blog, handleReadTime }) => {
           </div>
           <div className="button-time-container flex gap-x-1 md:gap-x-3">
             <h4>{readTime} min read</h4>
-            <button onClick={() => handleReadTime(readTime)}>
+            <button>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>
         </div>
         <div className="">
-          <h2 className="text-left font-bold">{title}</h2>
-          <button className="underline ">Mark as read</button>
+          <h2 className="text-left font-bold text-3xl">{title}</h2>
+          <button
+            onClick={() => handleReadTime(readTime)}
+            className="underline "
+          >
+            Mark as read
+          </button>
         </div>
       </p>
     </div>
