@@ -10,6 +10,7 @@ import SideCart from "./components/SideCart/SideCart";
 function App() {
   const [displayTime, setDisplayTime] = useState(0);
   const [displayTitle, setDisplayTitle] = useState("");
+  const [bookmarkedBlogs, setBookmarkedBlogs] = useState([]);
   const handleReadTime = (time) => {
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     if (previousReadTime) {
@@ -22,8 +23,8 @@ function App() {
     }
   };
   const handleTitle = (title) => {
-    const previousTitle = JSON.parse(localStorage.getItem("title"));
     setDisplayTitle(title);
+    setBookmarkedBlogs([...bookmarkedBlogs, title]);
   };
   return (
     <div className="App">
@@ -41,6 +42,7 @@ function App() {
           <SideCart
             displayTime={displayTime}
             displayTitle={displayTitle}
+            bookmarkedBlogs={bookmarkedBlogs}
           ></SideCart>
         </div>
       </div>
