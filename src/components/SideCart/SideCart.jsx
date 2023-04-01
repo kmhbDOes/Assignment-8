@@ -2,7 +2,7 @@ import React from "react";
 
 const SideCart = ({ displayTime, bookmarkedBlogs }) => {
   return (
-    <div className="sticky top-0 ">
+    <>
       <div className="h-14 w-52 mx-auto border border-purple-400 text-purple-500 font-bold rounded-xl  bg-purple-100">
         Spent Time On read: {displayTime} min
       </div>
@@ -15,7 +15,7 @@ const SideCart = ({ displayTime, bookmarkedBlogs }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
