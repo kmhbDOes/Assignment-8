@@ -6,6 +6,8 @@ import BonusQ from "./components/BonusQ/BonusQ";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import SideCart from "./components/SideCart/SideCart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [displayTime, setDisplayTime] = useState(0);
@@ -23,6 +25,11 @@ function App() {
     }
   };
   const handleTitle = (title) => {
+    if (bookmarkedBlogs.includes(title)) {
+      toast.error(`Bookmark '${title}' already added`);
+    } else {
+      setBookmarkedBlogs([...bookmarkedBlogs, title]);
+    }
     setDisplayTitle(title);
     setBookmarkedBlogs([...bookmarkedBlogs, title]);
   };
@@ -47,6 +54,7 @@ function App() {
         </div>
       </div>
       <BonusQ></BonusQ>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
