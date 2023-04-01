@@ -2,6 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
+    // Navbar Section
     <div className="navbar bg-base-100">
       <div className="flex-1">
         <h1 className="text-2xl md:text-4xl font-bold">Skillup Camp</h1>
@@ -16,7 +17,7 @@ const Header = () => {
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="../../../public/client.png" />
+              <img src="https://imagizer.imageshack.com/img924/4721/hA0Rdh.png" />
             </div>
           </label>
           <ul
