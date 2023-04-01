@@ -6,7 +6,7 @@
     "image": "",
     "authorImage": "./client-4.png",
     "readTime": "5",
-    "publishDate": "Sep 7, 2023"
+    "publishDate": "Sep 7(4 Days Ago)"
   },
   {
     "authorName": "Arajuo Rojas",
@@ -15,7 +15,7 @@
     "image": "",
     "authorImage": "./client-3.png",
     "readTime": "3",
-    "publishDate": "May 12, 2023"
+    "publishDate": "May 12(2 Days Ago)"
   },
   {
     "authorName": "Jael Hammond",
@@ -24,7 +24,7 @@
     "image": "https://facebook.com",
     "authorImage": "./client-2.png",
     "readTime": "10",
-    "publishDate": "Sep 18, 2022"
+    "publishDate": "Sep 18(1 Week Ago)"
   },
   {
     "authorName": "Laura Brady",
@@ -33,6 +33,6 @@
     "image": "http://cnn.com",
     "authorImage": "./client.png",
     "readTime": "8",
-    "publishDate": "Jun 2, 2022"
+    "publishDate": "Jun 2(3 Days Ago)"
   }
 ]

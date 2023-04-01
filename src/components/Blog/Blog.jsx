@@ -26,13 +26,13 @@ const Blog = ({ blog, handleReadTime, handleTitle }) => {
             </button>
           </div>
         </div>
-        <div className="">
+        <div className="md:text-left">
           <h2 className="text-center md:text-left font-bold text-3xl">
             {title}
           </h2>
           <button
             onClick={() => handleReadTime(readTime)}
-            className="underline text-purple-500"
+            className="underline text-purple-500 items-start my-2"
           >
             Mark as read
           </button>
